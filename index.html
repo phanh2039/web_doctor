@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS. Phạm Hoàng Anh - Bác sĩ Nội trú</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+        /* Inline critical CSS for loader */
+        .loader-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+        .loader-container.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+        .loader {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #0A2647, #205295, #00898B, #D4AF37, #782F40);
+            mask: radial-gradient(farthest-side, transparent calc(100% - 10px), #fff 0);
+            -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 10px), #fff 0);
+            animation: loader-spin 1.5s linear infinite;
+        }
+        @keyframes loader-spin {
+            to { transform: rotate(1turn); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Page loader -->
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Floating particles -->
+    <div class="floating-particles-container">
+        <div class="floating-particle" style="--size: 6px; --tx: -20px;"></div>
+        <div class="floating-particle" style="--size: 8px; --tx: 10px;"></div>
+        <div class="floating-particle" style="--size: 10px; --tx: 30px;"></div>
+        <div class="floating-particle" style="--size: 5px; --tx: -10px;"></div>
+        <div class="floating-particle" style="--size: 7px; --tx: 20px;"></div>
+        <div class="floating-particle" style="--size: 9px; --tx: -30px;"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo" class="animate__animated animate__fadeIn">
+                <h1 class="animate__animated animate__fadeInDown">BS. Phạm Hoàng Anh</h1>
+            </div>
+            <nav class="animate__animated animate__fadeIn">
+                <ul>
+                    <li><a href="#home" class="active" data-i18n="nav_home">Trang chủ</a></li>
+                    <li><a href="#about" data-i18n="nav_about">Giới thiệu</a></li>
+                    <li><a href="#expertise" data-i18n="nav_expertise">Chuyên môn</a></li>
+                    <li><a href="#education" data-i18n="nav_education">Đào tạo</a></li>
+                    <li><a href="#publications" data-i18n="nav_publications">Công bố khoa học</a></li>
+                    <li><a href="#projects" data-i18n="nav_projects">Dự án nghiên cứu</a></li>
+                    <li><a href="#testimonials" data-i18n="nav_testimonials">Đánh giá</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <div class="language-switcher">
+                <button class="language-btn active" data-lang="vi">VI</button>
+                <div class="language-divider"></div>
+                <button class="language-btn" data-lang="en">EN</button>
+                <div class="language-dropdown">
+                    <button class="language-btn" data-lang="zh"><img src="img/flags/zh.png" alt="Chinese" class="flag">中文</button>
+                    <button class="language-btn" data-lang="es"><img src="img/flags/es.png" alt="Spanish" class="flag">ES</button>
+                    <button class="language-btn" data-lang="fr"><img src="img/flags/fr.png" alt="French" class="flag">FR</button>
+                    <button class="language-btn" data-lang="de"><img src="img/flags/de.png" alt="German" class="flag">DE</button>
+                    <button class="language-btn" data-lang="ja"><img src="img/flags/ja.png" alt="Japanese" class="flag">日本語</button>
+                    <button class="language-btn" data-lang="ru"><img src="img/flags/ru.png" alt="Russian" class="flag">RU</button>
+                    <button class="language-btn" data-lang="ar"><img src="img/flags/ar.png" alt="Arabic" class="flag">عربي</button>
+                    <button class="language-btn" data-lang="ko"><img src="img/flags/ko.png" alt="Korean" class="flag">한국어</button>
+                </div>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content animate__animated animate__fadeIn">
+            <div class="hero-text">
+                <h1 data-i18n="hero_title">BS. PHẠM HOÀNG ANH</h1>
+                <h2 data-i18n="hero_subtitle">Bác sĩ Nội trú - Chuyên khoa Nội</h2>
+                <p data-i18n="hero_text">Chăm sóc sức khỏe tận tâm, điều trị hiệu quả</p>
+                <a href="#contact" class="btn" data-i18n="hero_btn">Đặt lịch hẹn</a>
+            </div>
+            <div class="hero-image">
+                <img src="img/doctor.jpg" alt="BS. Phạm Hoàng Anh">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="about_title">Giới thiệu</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>BS. Phạm Hoàng Anh</h3>
+                    <span class="position" data-i18n="about_position">Bác sĩ Nội trú - Bệnh viện Đa khoa Trung ương</span>
+                    <p data-i18n="about_p1">Xin chào! Tôi là Phạm Hoàng Anh, hiện đang là bác sĩ nội trú chuyên khoa Nội tại Bệnh viện Đa khoa Trung ương. Với niềm đam mê y học và mong muốn mang lại sức khỏe tốt nhất cho bệnh nhân, tôi luôn không ngừng học hỏi và nâng cao kiến thức chuyên môn.</p>
+                    <p data-i18n="about_p2">Tôi tin rằng việc điều trị không chỉ dừng lại ở việc chữa bệnh mà còn là sự đồng hành, lắng nghe và thấu hiểu bệnh nhân. Mỗi bệnh nhân đều là một trường hợp đặc biệt và cần được chăm sóc với phương pháp phù hợp nhất.</p>
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="5">0</div>
+                            <div class="stat-label" data-i18n="stat_years">Năm kinh nghiệm</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="1000">0</div>
+                            <div class="stat-label" data-i18n="stat_patients">Bệnh nhân đã điều trị</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="15">0</div>
+                            <div class="stat-label" data-i18n="stat_awards">Giải thưởng</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="img/doctor_2.jpg" alt="BS. Phạm Hoàng Anh">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="expertise">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="expertise_title">Chuyên môn</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="expertise-intro">
+                <p>Với chuyên môn sâu rộng và kinh nghiệm lâm sàng phong phú, tôi tự tin cung cấp dịch vụ chăm sóc sức khỏe toàn diện trong các lĩnh vực chuyên môn sau:</p>
+            </div>
+            <div class="expertise-container">
+                <div class="expertise-card">
+                    <div class="icon">
+                        <i class="fas fa-heart-pulse"></i>
+                    </div>
+                    <h3>Nội tim mạch</h3>
+                    <p>Chẩn đoán và điều trị các bệnh lý về tim mạch, cao huyết áp, rối loạn nhịp tim và các vấn đề tim mạch phức tạp bằng phương pháp tiên tiến kết hợp với liệu pháp tự nhiên.</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="icon">
+                        <i class="fas fa-lungs"></i>
+                    </div>
+                    <h3>Nội hô hấp</h3>
+                    <p>Điều trị các bệnh về đường hô hấp, viêm phổi, hen phế quản, COPD và các vấn đề hô hấp mãn tính với phác đồ điều trị cá nhân hóa và theo dõi sát sao.</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="icon">
+                        <i class="fas fa-stomach"></i>
+                    </div>
+                    <h3>Nội tiêu hóa</h3>
+                    <p>Chẩn đoán và điều trị các bệnh lý về đường tiêu hóa, dạ dày, đại tràng và gan mật với công nghệ nội soi hiện đại cùng tư vấn chế độ dinh dưỡng phù hợp.</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Nội thần kinh</h3>
+                    <p>Điều trị các bệnh về hệ thần kinh, đau đầu, rối loạn giấc ngủ và các triệu chứng thần kinh khác với phương pháp tổng hợp giữa y học hiện đại và liệu pháp hỗ trợ.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="education_title">Đào tạo & Kinh nghiệm</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="education-intro">
+                <p>Hành trình học tập và làm việc của tôi luôn hướng đến mục tiêu không ngừng nâng cao kiến thức chuyên môn để phục vụ bệnh nhân tốt nhất.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3 data-i18n="education_1_period">2023 - Hiện tại</h3>
+                        <h4 data-i18n="education_1_degree">Bác sĩ Nội trú</h4>
+                        <p data-i18n="education_1_school">Bệnh viện Đa khoa Trung ương</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3 data-i18n="education_2_period">2021 - 2023</h3>
+                        <h4 data-i18n="education_2_degree">Thạc sĩ Y học</h4>
+                        <p data-i18n="education_2_school">Đại học Y Hà Nội</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3 data-i18n="education_3_period">2020 - 2021</h3>
+                        <h4 data-i18n="education_3_degree">Bác sĩ thực hành</h4>
+                        <p data-i18n="education_3_school">Bệnh viện Bach Mai</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3 data-i18n="education_4_period">2014 - 2020</h3>
+                        <h4 data-i18n="education_4_degree">Bác sĩ Đa khoa</h4>
+                        <p data-i18n="education_4_school">Đại học Y Hà Nội</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="publications_title">Công bố khoa học</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="publications-filter">
+                <button class="filter-btn active" data-filter="all">Tất cả</button>
+                <button class="filter-btn" data-filter="international">Quốc tế</button>
+                <button class="filter-btn" data-filter="local">Trong nước</button>
+                <button class="filter-btn" data-filter="recent">Gần đây</button>
+            </div>
+            
+            <div class="publications-container">
+                <div class="publication-card" data-category="international recent">
+                    <div class="publication-badge international">Quốc tế</div>
+                    <div class="publication-header">
+                        <div class="publication-year" data-i18n="pub_1_year">2023</div>
+                        <h3 data-i18n="pub_1_title">Hiệu quả của phương pháp điều trị mới trong bệnh tăng huyết áp kháng trị</h3>
+                        <div class="publication-authors" data-i18n="pub_1_authors">Phạm Hoàng Anh, Nguyễn Văn A, Trần Thị B</div>
+                        <div class="publication-journal" data-i18n="pub_1_journal">Tạp chí Y học Việt Nam, 45(2), 78-85</div>
+                    </div>
+                    <div class="publication-body">
+                        <div class="citation-count">
+                            <i class="fas fa-quote-right"></i>
+                            <span>12 trích dẫn</span>
+                        </div>
+                        <div class="publication-abstract" data-i18n="pub_1_abstract">
+                            Nghiên cứu đánh giá hiệu quả của phương pháp phối hợp thuốc mới trong điều trị tăng huyết áp kháng trị trên 120 bệnh nhân tại Bệnh viện Đa khoa Trung ương. Kết quả cho thấy phác đồ mới giúp giảm huyết áp tâm thu trung bình 15mmHg và huyết áp tâm trương 8mmHg sau 3 tháng điều trị.
+                        </div>
+                        <div class="publication-actions">
+                            <a href="#" class="btn-small primary" data-i18n="view_more">Xem thêm</a>
+                            <a href="#" class="btn-small secondary" data-i18n="download">Tải xuống</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="publication-card" data-category="local recent">
+                    <div class="publication-badge local">Trong nước</div>
+                    <div class="publication-header">
+                        <div class="publication-year" data-i18n="pub_2_year">2022</div>
+                        <h3 data-i18n="pub_2_title">Đánh giá yếu tố nguy cơ tim mạch ở bệnh nhân đái tháo đường type 2</h3>
+                        <div class="publication-authors" data-i18n="pub_2_authors">Phạm Hoàng Anh, Lê Văn C, Đỗ Thị D</div>
+                        <div class="publication-journal" data-i18n="pub_2_journal">Y học thực hành, 32(4), 112-118</div>
+                    </div>
+                    <div class="publication-body">
+                        <div class="citation-count">
+                            <i class="fas fa-quote-right"></i>
+                            <span>8 trích dẫn</span>
+                        </div>
+                        <div class="publication-abstract" data-i18n="pub_2_abstract">
+                            Nghiên cứu cắt ngang trên 250 bệnh nhân đái tháo đường type 2 nhằm xác định các yếu tố nguy cơ tim mạch và đề xuất các biện pháp can thiệp dự phòng hiệu quả. Nghiên cứu chỉ ra rằng kiểm soát đường huyết kém và tăng huyết áp là hai yếu tố liên quan mạnh nhất đến biến cố tim mạch.
+                        </div>
+                        <div class="publication-actions">
+                            <a href="#" class="btn-small primary" data-i18n="view_more">Xem thêm</a>
+                            <a href="#" class="btn-small secondary" data-i18n="download">Tải xuống</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="publication-card" data-category="international">
+                    <div class="publication-badge international">Quốc tế</div>
+                    <div class="publication-header">
+                        <div class="publication-year" data-i18n="pub_3_year">2021</div>
+                        <h3 data-i18n="pub_3_title">So sánh hiệu quả và tính an toàn của hai phác đồ điều trị viêm phổi cộng đồng</h3>
+                        <div class="publication-authors" data-i18n="pub_3_authors">Nguyễn Văn A, Phạm Hoàng Anh, Trần Thị B</div>
+                        <div class="publication-journal" data-i18n="pub_3_journal">Tạp chí Nghiên cứu Y học, 28(3), 45-52</div>
+                    </div>
+                    <div class="publication-body">
+                        <div class="citation-count">
+                            <i class="fas fa-quote-right"></i>
+                            <span>15 trích dẫn</span>
+                        </div>
+                        <div class="publication-abstract" data-i18n="pub_3_abstract">
+                            Một nghiên cứu thử nghiệm lâm sàng ngẫu nhiên có đối chứng trên 80 bệnh nhân viêm phổi cộng đồng, so sánh hiệu quả và tính an toàn của hai phác đồ kháng sinh. Kết quả chỉ ra phác đồ kết hợp mới có hiệu quả điều trị nhanh hơn và ít tác dụng phụ hơn so với phác đồ truyền thống.
+                        </div>
+                        <div class="publication-actions">
+                            <a href="#" class="btn-small primary" data-i18n="view_more">Xem thêm</a>
+                            <a href="#" class="btn-small secondary" data-i18n="download">Tải xuống</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="projects_title">Dự án nghiên cứu</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="projects-tabs">
+                <button class="tab-btn active" data-category="all">Tất cả</button>
+                <button class="tab-btn" data-category="clinical">Lâm sàng</button>
+                <button class="tab-btn" data-category="community">Cộng đồng</button>
+                <button class="tab-btn" data-category="collaborative">Hợp tác</button>
+            </div>
+            
+            <div class="projects-list">
+                <div class="project-item" data-category="clinical">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <div class="project-label">Nghiên cứu lâm sàng</div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <h3 data-i18n="proj_1_title">Nghiên cứu đặc điểm lâm sàng và yếu tố nguy cơ của bệnh động mạch vành ở người trẻ tuổi</h3>
+                        
+                        <div class="project-meta">
+                            <span class="project-period"><i class="fas fa-calendar"></i> <span data-i18n="proj_1_period">2022 - 2023</span></span>
+                            <span class="project-role"><i class="fas fa-user-md"></i> <span data-i18n="proj_1_role">Nghiên cứu viên chính</span></span>
+                            <span class="project-status completed">Hoàn thành</span>
+                        </div>
+                        
+                        <div class="project-description">
+                            <p data-i18n="proj_1_desc">Dự án nghiên cứu đa trung tâm với sự tham gia của 5 bệnh viện lớn tại Hà Nội, thu thập và phân tích dữ liệu từ 300 bệnh nhân dưới 40 tuổi mắc bệnh động mạch vành nhằm xác định các yếu tố nguy cơ đặc thù và đề xuất chiến lược dự phòng.</p>
+                        </div>
+                        
+                        <div class="project-outcome">
+                            <h4 data-i18n="proj_1_outcome_title">Kết quả đạt được:</h4>
+                            <ul>
+                                <li data-i18n="proj_1_outcome_1">Xác định được 3 yếu tố nguy cơ chính ở nhóm bệnh nhân trẻ</li>
+                                <li data-i18n="proj_1_outcome_2">Đề xuất quy trình sàng lọc mới cho đối tượng có nguy cơ cao</li>
+                                <li data-i18n="proj_1_outcome_3">Công bố 2 bài báo quốc tế và 1 hướng dẫn lâm sàng</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-footer">
+                            <a href="#" class="project-link">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-item" data-category="community">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="project-label">Dự án cộng đồng</div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <h3 data-i18n="proj_2_title">Chương trình phòng chống tăng huyết áp tại cộng đồng</h3>
+                        
+                        <div class="project-meta">
+                            <span class="project-period"><i class="fas fa-calendar"></i> <span data-i18n="proj_2_period">2021 - Hiện tại</span></span>
+                            <span class="project-role"><i class="fas fa-user-md"></i> <span data-i18n="proj_2_role">Trưởng nhóm y tế</span></span>
+                            <span class="project-status ongoing">Đang tiến hành</span>
+                        </div>
+                        
+                        <div class="project-description">
+                            <p data-i18n="proj_2_desc">Dự án can thiệp cộng đồng nhằm tăng cường nhận thức và kiểm soát tăng huyết áp tại 3 xã thuộc huyện Đông Anh, Hà Nội. Chương trình bao gồm các hoạt động tập huấn cho cán bộ y tế cơ sở, khám sàng lọc cho người dân, và theo dõi điều trị cho bệnh nhân tăng huyết áp.</p>
+                        </div>
+                        
+                        <div class="project-outcome">
+                            <h4 data-i18n="proj_2_outcome_title">Kết quả đạt được:</h4>
+                            <ul>
+                                <li data-i18n="proj_2_outcome_1">Khám sàng lọc cho hơn 5000 người dân</li>
+                                <li data-i18n="proj_2_outcome_2">Phát hiện và đưa vào quản lý 650 ca tăng huyết áp mới</li>
+                                <li data-i18n="proj_2_outcome_3">Tăng tỷ lệ kiểm soát huyết áp tốt từ 25% lên 68% sau 1 năm</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-footer">
+                            <a href="#" class="project-link">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-item" data-category="collaborative">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-viruses"></i>
+                        </div>
+                        <div class="project-label">Hợp tác quốc tế</div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <h3 data-i18n="proj_3_title">Đánh giá hiệu quả của liệu pháp miễn dịch trong điều trị bệnh viêm phổi nặng</h3>
+                        
+                        <div class="project-meta">
+                            <span class="project-period"><i class="fas fa-calendar"></i> <span data-i18n="proj_3_period">2020 - 2021</span></span>
+                            <span class="project-role"><i class="fas fa-user-md"></i> <span data-i18n="proj_3_role">Thành viên nghiên cứu</span></span>
+                            <span class="project-status completed">Hoàn thành</span>
+                        </div>
+                        
+                        <div class="project-description">
+                            <p data-i18n="proj_3_desc">Dự án hợp tác quốc tế với Đại học Stanford (Hoa Kỳ) nghiên cứu hiệu quả của liệu pháp miễn dịch mới trong điều trị bệnh nhân viêm phổi nặng kháng kháng sinh. Thử nghiệm lâm sàng pha II được thực hiện trên 75 bệnh nhân.</p>
+                        </div>
+                        
+                        <div class="project-outcome">
+                            <h4 data-i18n="proj_3_outcome_title">Kết quả đạt được:</h4>
+                            <ul>
+                                <li data-i18n="proj_3_outcome_1">Giảm thời gian nằm viện trung bình 4.5 ngày</li>
+                                <li data-i18n="proj_3_outcome_2">Giảm tỷ lệ tử vong từ 22% xuống 8%</li>
+                                <li data-i18n="proj_3_outcome_3">Phát triển quy trình chẩn đoán sớm đặc hiệu</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-footer">
+                            <a href="#" class="project-link">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Đánh giá từ bệnh nhân</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-item active">
+                    <div class="testimonial-content">
+                        <div class="quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>Bác sĩ Hoàng Anh là người rất tận tâm và chuyên nghiệp. Tôi đã được điều trị với bác sĩ và kết quả rất tốt. Bác sĩ luôn lắng nghe và giải thích rõ ràng về tình trạng bệnh.</p>
+                        <div class="testimonial-author">
+                            <h4>Nguyễn Văn A</h4>
+                            <p>Bệnh nhân</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>Tôi rất biết ơn BS. Hoàng Anh vì đã giúp tôi vượt qua giai đoạn khó khăn khi mắc bệnh tim mạch. Cách tiếp cận của bác sĩ rất toàn diện và hiệu quả.</p>
+                        <div class="testimonial-author">
+                            <h4>Trần Thị B</h4>
+                            <p>Bệnh nhân</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>Bác sĩ Hoàng Anh không chỉ giỏi chuyên môn mà còn rất ân cần, chu đáo với bệnh nhân. Tôi cảm thấy may mắn khi được điều trị bởi bác sĩ.</p>
+                        <div class="testimonial-author">
+                            <h4>Lê Văn C</h4>
+                            <p>Bệnh nhân</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <div class="prev-btn"><i class="fas fa-chevron-left"></i></div>
+                <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div class="next-btn"><i class="fas fa-chevron-right"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Liên hệ</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info">
+                            <h3>Địa chỉ</h3>
+                            <p>Phòng khám Hoàng Anh, 123 Đường Trần Duy Hưng, Cầu Giấy, Hà Nội</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info">
+                            <h3>Điện thoại</h3>
+                            <p>(+84) 123 456 789</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info">
+                            <h3>Email</h3>
+                            <p>hoanganh@medical.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info">
+                            <h3>Giờ làm việc</h3>
+                            <p>Thứ 2 - Thứ 6: 8:00 - 17:00<br>Thứ 7: 8:00 - 12:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Đặt lịch hẹn</h3>
+                    <form id="appointment-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Họ và tên" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Số điện thoại" required>
+                        </div>
+                        <div class="form-group date-time">
+                            <div>
+                                <label for="appointment-date">Ngày hẹn</label>
+                                <input type="date" id="appointment-date" name="date" required>
+                            </div>
+                            <div>
+                                <label for="appointment-time">Thời gian</label>
+                                <select id="appointment-time" name="time" required>
+                                    <option value="">Chọn thời gian</option>
+                                    <option value="morning">Buổi sáng (8:00 - 11:30)</option>
+                                    <option value="afternoon">Buổi chiều (13:30 - 16:30)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="reason" name="reason" placeholder="Lý do khám" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Gửi yêu cầu</button>
+                    </form>
+                    <div id="form-message" class="form-message"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/logo.png" alt="Logo">
+                    <h3>BS. Phạm Hoàng Anh</h3>
+                </div>
+                <div class="footer-links">
+                    <h3 data-i18n="footer_links_title">Liên kết nhanh</h3>
+                    <ul>
+                        <li><a href="#home" data-i18n="nav_home">Trang chủ</a></li>
+                        <li><a href="#about" data-i18n="nav_about">Giới thiệu</a></li>
+                        <li><a href="#expertise" data-i18n="nav_expertise">Chuyên môn</a></li>
+                        <li><a href="#education" data-i18n="nav_education">Đào tạo</a></li>
+                        <li><a href="#publications" data-i18n="nav_publications">Công bố khoa học</a></li>
+                        <li><a href="#projects" data-i18n="nav_projects">Dự án nghiên cứu</a></li>
+                        <li><a href="#testimonials" data-i18n="nav_testimonials">Đánh giá</a></li>
+                        <li><a href="#contact" data-i18n="nav_contact">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3 data-i18n="footer_social_title">Kết nối</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer_copyright">&copy; 2025 BS. Phạm Hoàng Anh. Bản quyền thuộc về Hoàng Anh Medical.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/publications.js"></script>
+    <script src="js/testimonials.js"></script>
+    <script src="js/animations.js"></script>
+    <script>
+        // Hide loader when page is loaded
+        window.addEventListener('load', function() {
+            const loaderContainer = document.querySelector('.loader-container');
+            setTimeout(function() {
+                loaderContainer.classList.add('hidden');
+            }, 500);
+        });
+    </script>
+</body>
+</html>
