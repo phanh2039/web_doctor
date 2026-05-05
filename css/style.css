@@ -946,6 +946,20 @@ nav ul li a.active::after {
     background: var(--secondary-gradient);
 }
 
+.publication-sample-label {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: var(--secondary-color);
+    background-color: rgba(255, 214, 0, 0.16);
+    border: 1px solid rgba(255, 214, 0, 0.45);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    z-index: 1;
+}
+
 .publication-header {
     padding: 30px;
     position: relative;
@@ -976,6 +990,15 @@ nav ul li a.active::after {
     font-style: italic;
     font-size: 13px;
     color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+
+.publication-meta {
+    font-size: 12px;
+    color: var(--text-secondary);
+    background-color: var(--primary-very-light);
+    border-radius: 8px;
+    padding: 8px 10px;
 }
 
 .publication-body {
@@ -1010,7 +1033,8 @@ nav ul li a.active::after {
 
 .publication-actions {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 12px;
     margin-top: auto;
 }
 
