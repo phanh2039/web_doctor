@@ -1148,6 +1148,44 @@ nav ul li a.active::after {
     line-height: 1.6;
 }
 
+.project-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 18px 0 0;
+}
+
+.project-details div {
+    padding: 12px 14px;
+    background-color: rgba(15, 44, 82, 0.04);
+    border-left: 3px solid var(--primary-light);
+    border-radius: 8px;
+}
+
+.project-details dt {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.project-details dd {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--text-secondary);
+}
+
+.project-details a,
+.project-outcome a {
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
 .project-outcome {
     margin-top: 20px;
     padding: 15px;
