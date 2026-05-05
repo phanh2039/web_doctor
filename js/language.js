@@ -19,12 +19,12 @@ const translations = {
         
         // About section
         'about_title': 'Giới thiệu',
-        'about_position': 'Bác sĩ Nội trú - Bệnh viện Đa khoa Trung ương',
-        'about_p1': 'Xin chào! Tôi là Phạm Hoàng Anh, hiện đang là bác sĩ nội trú chuyên khoa Nội tại Bệnh viện Đa khoa Trung ương. Với niềm đam mê y học và mong muốn mang lại sức khỏe tốt nhất cho bệnh nhân, tôi luôn không ngừng học hỏi và nâng cao kiến thức chuyên môn.',
-        'about_p2': 'Tôi tin rằng việc điều trị không chỉ dừng lại ở việc chữa bệnh mà còn là sự đồng hành, lắng nghe và thấu hiểu bệnh nhân. Mỗi bệnh nhân đều là một trường hợp đặc biệt và cần được chăm sóc với phương pháp phù hợp nhất.',
+        'about_position': 'Nhà nghiên cứu y khoa & Nghiên cứu viên lâm sàng',
+        'about_p1': 'Xin chào! Tôi là Phạm Hoàng Anh, bác sĩ và nhà nghiên cứu y khoa tập trung vào nội khoa, nguy cơ tim mạch, nhiễm trùng hô hấp, bằng chứng đời thực và dịch tễ học lâm sàng.',
+        'about_p2': 'Cách tiếp cận nghiên cứu của tôi kết hợp thiết kế nghiên cứu chặt chẽ, phân tích dữ liệu, y học dựa trên bằng chứng và kết cục lấy người bệnh làm trung tâm, đồng thời chú trọng phê duyệt đạo đức và hợp tác đa chuyên ngành.',
         'stat_years': 'Năm kinh nghiệm',
-        'stat_patients': 'Bệnh nhân đã điều trị',
-        'stat_awards': 'Giải thưởng',
+        'stat_patients': 'Người tham gia nghiên cứu / hồ sơ nghiên cứu đã phân tích',
+        'stat_awards': 'Công bố bình duyệt',
         
         // Expertise section
         'expertise_title': 'Trọng tâm nghiên cứu',
@@ -140,12 +140,12 @@ const translations = {
         
         // About section
         'about_title': 'About Me',
-        'about_position': 'Resident Doctor - Central General Hospital',
-        'about_p1': 'Hello! I am Pham Hoang Anh, currently a resident doctor specializing in Internal Medicine at the Central General Hospital. With a passion for medicine and a desire to provide the best healthcare for patients, I continuously learn and enhance my professional knowledge.',
-        'about_p2': 'I believe that treatment is not just about curing diseases but also about accompanying, listening to, and understanding patients. Each patient is a special case and needs to be cared for with the most appropriate approach.',
+        'about_position': 'Medical Researcher & Clinical Research Fellow',
+        'about_p1': 'Hello! I am Pham Hoang Anh, a physician and medical researcher focused on internal medicine, cardiovascular risk, respiratory infections, real-world evidence, and clinical epidemiology.',
+        'about_p2': 'My research approach combines rigorous study design, data analysis, evidence-based medicine, and patient-centered outcomes, while prioritizing ethics approval and multidisciplinary collaboration.',
         'stat_years': 'Years of Experience',
-        'stat_patients': 'Patients Treated',
-        'stat_awards': 'Awards',
+        'stat_patients': 'Research participants / study records analyzed',
+        'stat_awards': 'Peer-reviewed publications',
         
         // Expertise section
         'expertise_title': 'Research Focus',
