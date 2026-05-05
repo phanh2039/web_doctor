@@ -13,9 +13,10 @@ const translations = {
         
         // Hero section
         'hero_title': 'BS. PHẠM HOÀNG ANH',
-        'hero_subtitle': 'Bác sĩ Nội trú - Chuyên khoa Nội',
-        'hero_text': 'Chăm sóc sức khỏe tận tâm, điều trị hiệu quả',
-        'hero_btn': 'Đặt lịch hẹn',
+        'hero_subtitle': 'Nhà nghiên cứu Y khoa | Nội khoa & Dịch tễ học lâm sàng',
+        'hero_text': 'Chuyển hóa dữ liệu lâm sàng thành chăm sóc dựa trên bằng chứng nhằm cải thiện kết quả điều trị.',
+        'hero_btn': 'Xem hồ sơ nghiên cứu',
+        'hero_secondary_btn': 'Hợp tác nghiên cứu',
         
         // About section
         'about_title': 'Giới thiệu',
@@ -134,9 +135,10 @@ const translations = {
         
         // Hero section
         'hero_title': 'DR. PHAM HOANG ANH',
-        'hero_subtitle': 'Resident Doctor - Internal Medicine',
-        'hero_text': 'Dedicated healthcare, effective treatment',
-        'hero_btn': 'Book Appointment',
+        'hero_subtitle': 'Medical Researcher | Internal Medicine & Clinical Epidemiology',
+        'hero_text': 'Translating clinical data into evidence-based care for better patient outcomes.',
+        'hero_btn': 'View Research Portfolio',
+        'hero_secondary_btn': 'Collaborate',
         
         // About section
         'about_title': 'About Me',
