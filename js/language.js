@@ -4,7 +4,7 @@ const translations = {
         // Navigation
         'nav_home': 'Trang chủ',
         'nav_about': 'Giới thiệu',
-        'nav_expertise': 'Chuyên môn',
+        'nav_expertise': 'Trọng tâm nghiên cứu',
         'nav_education': 'Đào tạo',
         'nav_publications': 'Công bố khoa học',
         'nav_projects': 'Dự án nghiên cứu',
@@ -27,15 +27,16 @@ const translations = {
         'stat_awards': 'Giải thưởng',
         
         // Expertise section
-        'expertise_title': 'Chuyên môn',
-        'expertise_1_title': 'Nội tim mạch',
-        'expertise_1_text': 'Chẩn đoán và điều trị các bệnh lý về tim mạch, cao huyết áp, rối loạn nhịp tim.',
-        'expertise_2_title': 'Nội hô hấp',
-        'expertise_2_text': 'Điều trị các bệnh về đường hô hấp, viêm phổi, hen phế quản, COPD.',
-        'expertise_3_title': 'Nội tiêu hóa',
-        'expertise_3_text': 'Chẩn đoán và điều trị các bệnh lý về đường tiêu hóa, dạ dày, đại tràng.',
-        'expertise_4_title': 'Nội thần kinh',
-        'expertise_4_text': 'Điều trị các bệnh về hệ thần kinh, đau đầu, rối loạn giấc ngủ.',
+        'expertise_title': 'Trọng tâm nghiên cứu',
+        'expertise_intro': 'Các hướng nghiên cứu chính tập trung vào dịch tễ học lâm sàng, mô hình hóa nguy cơ và chuyển hóa bằng chứng thành thực hành chăm sóc sức khỏe.',
+        'expertise_1_title': 'Mô hình hóa nguy cơ tim mạch',
+        'expertise_1_desc': 'Xây dựng và đánh giá các mô hình dự báo nguy cơ tim mạch nhằm hỗ trợ phân tầng nguy cơ và chiến lược phòng ngừa dựa trên dữ liệu.',
+        'expertise_2_title': 'Kết cục nhiễm trùng hô hấp',
+        'expertise_2_desc': 'Phân tích các yếu tố liên quan đến diễn tiến, biến chứng và kết cục điều trị của nhiễm trùng hô hấp trong môi trường lâm sàng.',
+        'expertise_3_title': 'Dịch tễ học đái tháo đường và bệnh chuyển hóa',
+        'expertise_3_desc': 'Nghiên cứu gánh nặng bệnh tật, yếu tố nguy cơ và mô hình chăm sóc cho đái tháo đường, béo phì và các rối loạn chuyển hóa liên quan.',
+        'expertise_4_title': 'Tổng hợp bằng chứng và phát triển hướng dẫn lâm sàng',
+        'expertise_4_desc': 'Thực hiện tổng quan hệ thống, phân tích bằng chứng và xây dựng khuyến nghị nhằm hỗ trợ các hướng dẫn lâm sàng có tính ứng dụng.',
         
         // Education section
         'education_title': 'Đào tạo & Kinh nghiệm',
@@ -124,7 +125,7 @@ const translations = {
         // Navigation
         'nav_home': 'Home',
         'nav_about': 'About',
-        'nav_expertise': 'Expertise',
+        'nav_expertise': 'Research Focus',
         'nav_education': 'Education',
         'nav_publications': 'Publications',
         'nav_projects': 'Research Projects',
@@ -147,15 +148,16 @@ const translations = {
         'stat_awards': 'Awards',
         
         // Expertise section
-        'expertise_title': 'Expertise',
-        'expertise_1_title': 'Cardiology',
-        'expertise_1_text': 'Diagnosis and treatment of cardiovascular diseases, hypertension, and cardiac arrhythmias.',
-        'expertise_2_title': 'Respiratory Medicine',
-        'expertise_2_text': 'Treatment of respiratory diseases, pneumonia, asthma, and COPD.',
-        'expertise_3_title': 'Gastroenterology',
-        'expertise_3_text': 'Diagnosis and treatment of gastrointestinal diseases, stomach, and colon.',
-        'expertise_4_title': 'Neurology',
-        'expertise_4_text': 'Treatment of neurological disorders, headaches, and sleep disorders.',
+        'expertise_title': 'Research Focus',
+        'expertise_intro': 'Core research interests focus on clinical epidemiology, risk modeling, and translating evidence into healthcare practice.',
+        'expertise_1_title': 'Cardiovascular risk modeling',
+        'expertise_1_desc': 'Development and evaluation of cardiovascular risk prediction models to support risk stratification and data-driven prevention strategies.',
+        'expertise_2_title': 'Respiratory infection outcomes',
+        'expertise_2_desc': 'Analysis of factors associated with disease progression, complications, and treatment outcomes in respiratory infections in clinical settings.',
+        'expertise_3_title': 'Diabetes and metabolic disease epidemiology',
+        'expertise_3_desc': 'Research on disease burden, risk factors, and care models for diabetes, obesity, and related metabolic disorders.',
+        'expertise_4_title': 'Evidence synthesis and clinical guideline development',
+        'expertise_4_desc': 'Systematic evidence reviews, evidence appraisal, and recommendation development to support actionable clinical guidelines.',
         
         // Education section
         'education_title': 'Education & Experience',
